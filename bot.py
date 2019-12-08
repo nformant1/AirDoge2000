@@ -15,7 +15,7 @@ test_mode = 1 # if script is in test-mode only prints and no sumissions
 
 # CRON CONFIG
 # Will run every hour, execute the script and log the print (tipped user, submission, amount)
-# * * * * * /usr/bin/AirDoge2000.py > AirDoge2000.log
+# * * * * * /usr/bin/bot.py > AirDoge2000.log
 
 
 # SCRIPT STARTS HERE
