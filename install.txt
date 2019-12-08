@@ -1,0 +1,19 @@
+Installation Python3 on RaspberryPi
+sudo apt-get install python3-dev libffi-dev libssl-dev -y
+wget https://www.python.org/ftp/python/3.6.3/Python-3.6.3.tar.xz
+tar xJf Python-3.6.3.tar.xz
+cd Python-3.6.3
+./configure
+make
+sudo make install
+sudo pip3 install --upgrade pip
+
+Loading Packages
+sudo pip install praw
+
+Running the package
+python3 bot.py >> log.csv
+
+Missing:
+How to create client id / secret
+register to SoDogeTip
