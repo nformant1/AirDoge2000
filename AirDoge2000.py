@@ -16,7 +16,7 @@ botname = "AirDoge2000"
 subreddit = "dogecoin"
 wallet = "D6tznKX3VNUwpXQRMmTvPQCoShkrgECwb6" #SoDogeTip-Wallet
 score_threshold = 25
-test_mode = 1 # if script is in test-mode only prints and no sumissions
+test_mode = 0 # if script is in test-mode only prints and no sumissions
 logfile = "/home/pi/AirDoge2000/log.csv"
 #logfile = "C:\\test\\log.csv"
 
@@ -62,7 +62,7 @@ if __name__ == '__main__':
     # The bot should appear randomly
     # Bot should be active about once a day and will run every hour
     check_posts = 0
-    number = randint(1,16)
+    number = randint(1,18)
     if number == 1:
         check_posts = 1
 
