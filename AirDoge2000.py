@@ -48,7 +48,8 @@ def dogeify(text):
         for word in allnouns:
             phrase = doge_adjectives[random.randint(0, 5)] + " " + word.strip(',\'') + "."
             doge_sentence.append(phrase)
-
+            if len(doge_sentence) >= 3:
+                break
         emotion = doge_emotions[random.randint(0, 2)] + "."
         doge_sentence.append(emotion)
         # print " ".join(doge_sentence)
@@ -62,7 +63,7 @@ if __name__ == '__main__':
     # The bot should appear randomly
     # Bot should be active about once a day and will run every hour
     check_posts = 0
-    number = randint(1,18)
+    number = randint(1,20)
     if number == 1:
         check_posts = 1
 
@@ -87,9 +88,9 @@ if __name__ == '__main__':
         if 250 < fbalance <= 500:
             tip_amount = 10
         if 500 < fbalance <= 1000:
-            tip_amount = 25
+            tip_amount = 15
         if 1000 < fbalance:
-            tip_amount = 30
+            tip_amount = 20
 
         reply_text = "+/u/sodogetip random"+str(tip_amount)+" DOGE verify"
 
